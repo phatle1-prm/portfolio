@@ -2,10 +2,14 @@
   "name": "porfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/PhatLe7/portfolio",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "tsc -b && vite build",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
